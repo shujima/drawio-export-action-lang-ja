@@ -1,6 +1,6 @@
 .PHONY: build run setup-test test cleanup
 
-DOCKER_IMAGE?=rlespinasse/drawio-export-action:local
+DOCKER_IMAGE?=shujima/drawio-export-action-lang-ja:local
 build:
 	@docker build -t ${DOCKER_IMAGE} .
 
