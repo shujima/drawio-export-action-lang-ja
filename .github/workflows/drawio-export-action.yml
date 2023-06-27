@@ -1,4 +1,4 @@
-name: drawio-export-action
+name: drawio-export-action-lang-ja
 on:
   pull_request:
   push:
@@ -17,7 +17,7 @@ jobs:
           # - macos-latest
           # - windows-latest
     concurrency:
-      group: drawio-export-action-os-testing-${{ github.ref }}
+      group: drawio-export-action-lang-ja-os-testing-${{ github.ref }}
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v3
@@ -84,7 +84,7 @@ jobs:
           # - macos-latest
           # - windows-latest
     concurrency:
-      group: drawio-export-action-os-testing-with-full-clone-${{ github.ref }}
+      group: drawio-export-action-lang-ja-os-testing-with-full-clone-${{ github.ref }}
       cancel-in-progress: true
     steps:
       - uses: actions/checkout@v3
@@ -134,7 +134,7 @@ jobs:
       - os-testing-with-shallow-clone
       - os-testing-with-full-clone
     concurrency:
-      group: drawio-export-action-release-${{ github.ref }}
+      group: drawio-export-action-lang-ja-release-${{ github.ref }}
     steps:
       - uses: actions/checkout@v3
       - name: Release this GitHub Action
