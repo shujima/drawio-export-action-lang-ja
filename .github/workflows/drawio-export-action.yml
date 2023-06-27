@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - v2.x
+  workflow_dispatch:
 jobs:
   os-testing-with-shallow-clone:
     runs-on: ${{ matrix.os  }}
